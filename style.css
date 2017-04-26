@@ -2045,7 +2045,7 @@ ul.menu {
 
 /* =Home Page _________________________________*/
 .home-main {
-  background: url("images/woman-sailing-sunset.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/woman-sailing-sunset.jpg") no-repeat center center;
   background-size: cover;
   padding: 5rem 0;
   text-align: center; }
@@ -2091,7 +2091,7 @@ ul.menu {
     .jumpstart-difference {
       padding: 5rem 0; } }
   .jumpstart-difference .glass-bg {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     overflow: auto;
     border-radius: 3px;
     padding: 2.8rem 0; }

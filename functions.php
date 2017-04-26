@@ -121,6 +121,16 @@ function my_add_scripts() {
 	}
 }
 
+/** Add Viewport meta tag for mobile browsers */
+add_action( 'genesis_meta', 'add_viewport_meta_tag' );
+function add_viewport_meta_tag() {
+    echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>';
+}
+
+/** Remove Title & Description */
+remove_action( 'genesis_site_title', 'genesis_seo_site_title' );
+remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
+
 add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10, 3 );
 function remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
     $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );

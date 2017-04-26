@@ -21,11 +21,9 @@ genesis_markup( array(
 	'context' => 'site-container',
 ) );
 
-/*
 do_action( 'genesis_before_header' );
 do_action( 'genesis_header' );
 do_action( 'genesis_after_header' );
-*/
 ?>
 
 <header id="header" class="site-header">
