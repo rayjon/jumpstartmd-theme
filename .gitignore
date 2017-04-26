@@ -10,3 +10,5 @@ vendor
 *.sublime-project
 *.sublime-workspace
 *.bak
+*.vscode
+*.codekit3
