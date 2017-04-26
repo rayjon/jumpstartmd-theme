@@ -681,7 +681,7 @@ textarea {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(219, 184, 0, 0.7);
     outline: none; }
 
-@media screen and (min-width: 53.75rem) {
+@media screen and (min-width: 860px) {
   .site-main input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea {
     margin-bottom: 5px; } }
 
@@ -720,7 +720,7 @@ select {
   display: none; }
 
 form {
-  max-width: 64rem;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto; }
   form::after {
@@ -1423,7 +1423,7 @@ hr.dashed {
 #inner {
   padding: 1.4rem 0;
   overflow: hidden; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     #inner {
       margin: 2.5rem auto;
       padding: 4rem 0 0; } }
@@ -1464,12 +1464,12 @@ hr.dashed {
   margin: 0 auto 0;
   padding: 0 1.4rem;
   max-width: 1050px; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .wrap {
-      /*min-width: 860px; */} }
+      min-width: 860px; } }
 
 #content-sidebar-wrap {
-  max-width: 64rem;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto; }
   #content-sidebar-wrap::after {
@@ -1486,7 +1486,6 @@ ul.no-bullets {
 ul.no-bullets li {
   margin-bottom: 1rem; }
 
-/***** =Header  ***************************************************************/
 body.admin-bar .site-header {
   top: 32px; }
 
@@ -1498,7 +1497,7 @@ body.admin-bar .site-header {
   padding: 0.7rem 0 1.4rem;
   text-align: center;
   z-index: 999; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .site-header {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
       overflow: initial;
@@ -1518,7 +1517,7 @@ body.admin-bar .site-header {
     margin-left: 25.5319148936%; }
     .site-header .site-logo:last-child {
       margin-right: 0; }
-    @media screen and (min-width: 53.75rem) {
+    @media screen and (min-width: 860px) {
       .site-header .site-logo {
         float: left;
         display: block;
@@ -1536,7 +1535,7 @@ body.admin-bar .site-header {
     width: 100%; }
     .site-header .site-nav:last-child {
       margin-right: 0; }
-    @media screen and (min-width: 53.75rem) {
+    @media screen and (min-width: 860px) {
       .site-header .site-nav {
         float: left;
         display: block;
@@ -1551,7 +1550,7 @@ body.admin-bar .site-header {
     width: 100%; }
     .site-header .number-portal:last-child {
       margin-right: 0; }
-    @media screen and (min-width: 53.75rem) {
+    @media screen and (min-width: 860px) {
       .site-header .number-portal {
         float: left;
         display: block;
@@ -1565,7 +1564,7 @@ body.admin-bar .site-header {
     font-size: 1.2em;
     margin: 1.4rem 0;
     text-align: center; }
-    @media screen and (min-width: 53.75rem) {
+    @media screen and (min-width: 860px) {
       .site-header .contact-phone {
         display: inline-block;
         font-size: 1.2em;
@@ -1605,14 +1604,14 @@ body.admin-bar .site-header {
   margin: 0;
   padding: 0;
   text-align: center; }
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 640px) {
     .site-header .nav,
     .site-header .menu {
       display: block;
       float: none;
       margin: 0 auto;
       text-align: center; } }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .site-header .nav,
     .site-header .menu {
       float: left;
@@ -2050,16 +2049,16 @@ ul.menu {
   background-size: cover;
   padding: 5rem 0;
   text-align: center; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .home-main {
       padding: 12rem 0; } }
-  @media screen and (min-width: 90rem) {
+  @media screen and (min-width: 1440px) {
     .home-main {
       padding: 14rem 0; } }
-  @media screen and (min-width: 120rem) {
+  @media screen and (min-width: 1920px) {
     .home-main {
       padding: 17rem 0; } }
-  @media screen and (min-width: 160rem) {
+  @media screen and (min-width: 2560px) {
     .home-main {
       padding: 24rem 0; } }
   .home-main .button-get-started {
@@ -2088,7 +2087,7 @@ ul.menu {
   padding: 2.8rem 0;
   text-shadow: 1px 1px 30px #000;
   text-align: center; }
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 640px) {
     .jumpstart-difference {
       padding: 5rem 0; } }
   .jumpstart-difference .glass-bg {
@@ -2096,7 +2095,7 @@ ul.menu {
     overflow: auto;
     border-radius: 3px;
     padding: 2.8rem 0; }
-    @media screen and (min-width: 40rem) {
+    @media screen and (min-width: 640px) {
       .jumpstart-difference .glass-bg {
         float: left;
         display: block;
@@ -2120,7 +2119,7 @@ ul.menu {
       margin-bottom: 1.4rem; }
   .the-results .results-graphic {
     margin-bottom: 1.4rem; }
-    @media screen and (min-width: 40rem) {
+    @media screen and (min-width: 640px) {
       .the-results .results-graphic {
         float: left;
         display: block;
@@ -2129,7 +2128,7 @@ ul.menu {
         margin-bottom: 0; }
         .the-results .results-graphic:last-child {
           margin-right: 0; } }
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 640px) {
     .the-results .results-bullets {
       float: left;
       display: block;
@@ -2155,7 +2154,7 @@ ul.menu {
   color: white;
   padding: 2.8rem 0;
   text-align: center; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .five-ms {
       padding: 5.6rem 0; } }
   .five-ms p {
@@ -2172,7 +2171,7 @@ ul.menu {
   .icon-ms .icon-m {
     padding: 0.5rem 0 0;
     margin-top: 60px; }
-    @media screen and (min-width: 40rem) {
+    @media screen and (min-width: 640px) {
       .icon-ms .icon-m {
         float: left;
         display: block;
@@ -2199,7 +2198,7 @@ ul.menu {
     color: #f2d383; }
     .icon-ms h3 a:hover {
       color: white; }
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 640px) {
     .icon-ms .icon-m:nth-child(4) {
       margin-left: 17.0212765957%; } }
 
@@ -2214,17 +2213,17 @@ ul.menu {
       color: white; }
   .mobile-desk i {
     color: #fee300; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .mobile-desk {
       background-position: 100% 0;
       padding: 22rem 0 2rem; } }
-  @media screen and (min-width: 90rem) {
+  @media screen and (min-width: 1440px) {
     .mobile-desk {
       padding-top: 28rem; } }
-  @media screen and (min-width: 120rem) {
+  @media screen and (min-width: 1920px) {
     .mobile-desk {
       padding-top: 32rem; } }
-  @media screen and (min-width: 160rem) {
+  @media screen and (min-width: 2560px) {
     .mobile-desk {
       padding-top: 42rem; } }
 
@@ -2245,13 +2244,13 @@ ul.menu {
 .meet-our-team {
   padding: 2.8rem 0;
   text-align: center; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .meet-our-team {
       padding: 2.8rem; } }
   .meet-our-team header {
     margin-bottom: 1.4rem;
     overflow: auto; }
-  @media screen and (min-width: 20rem) and (max-width: 40rem) {
+  @media screen and (min-width: 320px) and (max-width: 640px) {
     .meet-our-team .team-mates .team-mate {
       float: left;
       display: block;
@@ -2263,7 +2262,7 @@ ul.menu {
         margin-right: 0; }
       .meet-our-team .team-mates .team-mate:nth-child(2n+1) {
         clear: left; } }
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 640px) {
     .meet-our-team .team-mates .team-mate {
       float: left;
       display: block;
@@ -2293,7 +2292,7 @@ ul.menu {
     margin-bottom: 1.4rem; }
   .partner-pathway .pathways .pathway {
     margin-bottom: 1.4rem; }
-    @media screen and (min-width: 40rem) {
+    @media screen and (min-width: 640px) {
       .partner-pathway .pathways .pathway {
         float: left;
         display: block;
@@ -2360,14 +2359,14 @@ ul.menu {
 
 .blog .mailchimp-subscribe-form {
   display: none; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .blog .mailchimp-subscribe-form {
       margin-bottom: 1.4rem; } }
 
 .flex-blog {
   margin-bottom: 2.8rem;
   display: none; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .flex-blog {
       display: block; } }
   .flex-blog .flex-control-paging li a {
@@ -2378,7 +2377,7 @@ ul.menu {
 .blog-topic-menu .menu-blog-topics-container {
   overflow: auto;
   display: none; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .blog-topic-menu .menu-blog-topics-container {
       display: block; } }
   .blog-topic-menu .menu-blog-topics-container ul {
@@ -2427,7 +2426,7 @@ ul.menu {
 
 .attachment-post-thumbnail {
   margin-bottom: 1.4rem; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .attachment-post-thumbnail {
       margin: 0; } }
 
@@ -2465,7 +2464,7 @@ ul.menu {
     padding: 0;
     height: 9.1rem;
     width: 9.6rem; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .sidebar .category-browser .image-block {
       display: block; } }
 
@@ -2523,7 +2522,7 @@ ul.menu {
   display: inline-block;
   width: 60%; }
 
-@media screen and (min-width: 53.75rem) {
+@media screen and (min-width: 860px) {
   .hfeed {
     float: left;
     display: block;
@@ -2800,7 +2799,7 @@ img.alignright {
   padding: 20px 0;
   display: inline;
   width: 100%; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .sidebar {
       width: 33%; } }
   .sidebar a:visited {
@@ -3119,7 +3118,7 @@ I'm doing this here since adding classes to structural elements in Genesis is so
   .site-footer h2 {
     font-size: 1.8em;
     margin-top: 1.4rem; }
-    @media screen and (min-width: 40rem) {
+    @media screen and (min-width: 640px) {
       .site-footer h2 {
         margin: 0 0 1em; } }
   .site-footer h3.phone-number {
@@ -3151,7 +3150,7 @@ I'm doing this here since adding classes to structural elements in Genesis is so
   font-weight: 400;
   margin: 0 auto;
   text-align: center; }
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 640px) {
     .footer-phone {
       display: block; } }
 
@@ -4126,7 +4125,7 @@ ul.mobile-social-icons i:hover {
 ================================================================*/
 /* Contact Pages */
 .program-stats-list {
-  max-width: 64rem;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2.5rem; }
@@ -4173,7 +4172,7 @@ ul.mobile-social-icons i:hover {
     margin-right: 0; }
 
 /* Misc Pages */
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   .get-info-page-form {
     float: left;
     display: block;
@@ -4201,7 +4200,7 @@ ul.mobile-social-icons i:hover {
   float: left;
   margin: 0 0.7rem 0 0; }
 
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   .location-contact-info {
     float: left;
     display: block;
@@ -4213,7 +4212,7 @@ ul.mobile-social-icons i:hover {
 .corporate-contacts {
   background: #eee;
   padding: 1.4rem; }
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 640px) {
     .corporate-contacts {
       float: left;
       display: block;
@@ -4245,7 +4244,7 @@ ul.mobile-social-icons i:hover {
   background: #f2d383;
   padding: 1.4rem;
   margin-bottom: 2.8rem; }
-  @media screen and (min-width: 53.75rem) {
+  @media screen and (min-width: 860px) {
     .referral-info {
       padding: 1.4rem 8.4rem; } }
   .referral-info h2 {
@@ -4397,9 +4396,7 @@ ul.mobile-social-icons i:hover {
     padding: 0; }
   #nav li ul {
     width: 100%; }
-  #nav li li a,
-  #nav li li a:link,
-  #nav li li a:visited {
+  #nav li li a, #nav li li a:link, #nav li li a:visited {
     display: block;
     width: auto; }
   #nav_menu-10 {
@@ -4437,7 +4434,7 @@ ul.mobile-social-icons i:hover {
     display: block;
     margin: 0 0 1.5rem;
     overflow: auto; }
-  .mobile-blog-subscription input[type=email] {
+  .mobile-blog-subscription input[type="email"] {
     border: 1px solid #CCC;
     border-radius: 0;
     padding: .5rem 0 .5rem .8rem;

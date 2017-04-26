@@ -103,10 +103,15 @@ function print_styles() { ?>
 /** Force full width layout on all archive pages*/
 //add_filter( 'genesis_pre_get_option_site_layout', 'full_width_layout_archives' );
 
+/* Load Main Stylesheet for Child Theme */
+add_filter( 'stylesheet_uri', 'custom_replace_default_style_sheet', 10, 2 );
+function custom_replace_default_style_sheet() {
+	return get_stylesheet_directory_uri() . '/style.css';
+}
+
 /* Enqueue Custom Javascript and CSS Files */
 add_action('wp_enqueue_scripts', 'my_add_scripts');
 function my_add_scripts() {
-    wp_enqueue_style( 'jmd-style', get_bloginfo('stylesheet_directory') );
     /* Landing Page Styles */
 	if ( is_page( 8620 ) ) {
 		wp_enqueue_style( 'mountain-view-landing', get_bloginfo('stylesheet_directory').'/css/mountain-view-landing.css' );
