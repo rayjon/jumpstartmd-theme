@@ -879,7 +879,7 @@ body {
   -moz-font-feature-settings: "kern", "liga", "pnum";
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
-  -webkit-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
   color: #332e1f;
   font-family: "Helvetica Neue Web", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1rem;
@@ -2069,6 +2069,9 @@ ul.menu {
     z-index: 0; }
   .home-main h1 {
     margin-bottom: .25em; }
+    @media screen and (min-width: 860px) {
+      .home-main h1 {
+        font-size: 3.25rem; } }
   .home-main h2 {
     margin-bottom: 0; }
   .home-main i {

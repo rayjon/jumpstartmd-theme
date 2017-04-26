@@ -36,7 +36,10 @@
     }
     
     h1 {
-        margin-bottom: .25em;  
+        margin-bottom: .25em; 
+        @include media($large-screen-up) {
+            font-size: 3.25rem;
+        }
     }
     
     h2 {
