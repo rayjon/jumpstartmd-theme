@@ -1,0 +1,102 @@
+.site-footer {
+    background: #EEE;
+    margin: 0 auto 0;
+    padding: 4rem 0;
+    clear: both;
+    overflow: hidden;
+    
+    h2 {
+        font-size: 1.8em;
+        margin-top: $base-spacing;
+        
+        @include media($medium-screen-up) {
+            margin: 0 0 1em;
+        }
+    }
+    
+    h3.phone-number {
+        font-weight: bold;
+        margin: 0 0 1em;
+    }
+
+    ul.blog-posts {
+        list-style: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            font-size: 18px;
+            margin-bottom: 1em;
+        }
+
+    }
+    
+    .mailchimp-subscribe-form {
+        input[type="submit"] {
+        margin-left: 0;
+        }
+    }
+    
+    a {
+        color: $black-magic;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.fl-builder .site-footer {
+    padding: 40px 20px;
+}
+
+.footer-phone {
+    display: none;
+    padding-top: 3rem;
+    text-align: center;
+    font-size: $h2;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+    
+    @include media($medium-screen-up) {
+        display: block;
+    }
+}
+
+
+.colophon {
+    background: #75777B;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    
+    a {
+        color: $cherokee;        
+        
+        &:visited {
+            color: $cherokee;
+        }
+        
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+    ul li {
+        display: inline-table;
+        margin: 0;
+    
+        &+ li:before {
+            color: $cherokee;
+            content: "\2022";
+            padding-right: rem(5);
+        }
+
+        &:last-child:after {
+            content: none;
+        }
+    }
+}

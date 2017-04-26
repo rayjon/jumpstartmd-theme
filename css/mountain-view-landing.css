@@ -1,0 +1,190 @@
+/*  LAYOUT ////////////////////////////////////////////////*/
+
+body {
+	background: #FFF;
+}
+
+#wrap {
+	background: #FFF;
+	width: 1064px;
+}
+
+#inner {
+	margin: 0 auto;
+	max-width: 1064px;
+}
+
+#content-sidebar-wrap,
+.full-width-content #content {
+	float: none;
+	max-width: 1064px;
+	overflow: hidden;
+}
+
+
+/*  HEADER ////////////////////////////////////////////////*/
+
+#content .landing-title {
+	background-image: url('http://www.jumpstartmd.com/wp-content/themes/wallrich/images/jsmd-landing-banner.png');
+	background-repeat: no-repeat;
+	background-size: 692px;
+	color: white;
+	font-family: 'Pacifico';
+	margin: 1rem 0;
+	min-height: 150px;
+}
+
+#content .landing-title h1 {
+	color: white;
+	font-family: 'Pacifico', sans-serif;
+	font-weight: normal;
+	font-size: 2.8rem;
+	line-height: 3.2rem;
+	padding: 1rem 0 0;
+	text-align: center;
+}
+
+/*  CONTENT ////////////////////////////////////////////////*/
+
+#content .fifty-off-text {
+	background-image:  url('http://www.jumpstartmd.com/wp-content/themes/wallrich/images/50-off-background.png');
+	background-repeat: no-repeat;
+	margin: 0 0 1rem;
+	min-height: 263px;
+	padding: 0rem 2.5rem 0 1.25rem;
+}
+
+#content .fifty-off-text h2 {
+	color: white;
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 2rem 0 .8rem;
+}
+
+#content .fifty-off-text p {
+	color: #939598;
+	font-weight: bold;
+	line-height: 1.1rem;
+}
+
+#content .fifty-off-text span {
+	color: #E98300;
+}
+
+#content .program-bullets h2 {
+	background-image: url('http://www.jumpstartmd.com/wp-content/themes/wallrich/images/jsmd-logo-bullet.png');
+	background-repeat: no-repeat;
+	color: #809d92;
+	font-size: 2rem;
+	margin: 0 0 .25rem;
+	padding: .1rem 0 0 6rem;
+}
+
+
+#content .program-bullets p {
+	color: #809d92;
+	line-height: 1.3rem;
+}
+
+/*  SIDEBAR ////////////////////////////////////////////////*/
+
+#content .gform_wrapper {
+	background: rgb(154,196,131);
+	border: none;
+	border-radius: 0 0 2px 2px;
+	padding: 0 15px 10px;
+	margin: 0 0 30px;
+}
+
+#content h4.gform-title {
+	background: rgb(154,196,131);
+	border: none;
+	color: #FEFEFE;
+	border-radius: 2px 2px 0 0;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 1rem 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.gfield_label,
+.ginput_complex,
+.gfield_radio {
+	color: #555;
+}
+
+#content .gform_footer {
+	margin: .5rem 0 0 1.5rem;
+	clear: both;
+}
+
+.gform_button {
+	border: 1px solid #A66D15;
+	background: #FAA913;
+	border-radius: 4px;
+	font-size: 1.2rem;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	padding: 6px 12px 8px;
+	text-transform: none;
+}
+
+.gform_button:hover {
+	color: #CCC;
+	background: #444;
+	border: 1px solid #777;
+}
+
+#content .call-box {
+	text-align: center;
+	margin: 3rem 0 0;
+}
+
+#content .call-box h2 {
+	color: #FAA913;
+	font-size: 1.8rem;
+	font-weight: normal;
+	font-family: 'Pacifico', serif;
+}
+
+#content .call-box h3 {
+	color: #939598;
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin: 1.25rem 0 0;
+}
+
+#content img {
+	margin: 0;
+}
+
+/*  FOOTER ////////////////////////////////////////////////*/
+
+/* Remove normal page elements */
+.creds {
+	display: none;
+}
+
+footer {
+	background: #8ba69c;
+	padding: 1.5rem 0;
+}
+
+#content footer h3 {
+	color: #f1f0cd;
+	font-size: 1.5rem;
+	margin: 0;
+	text-align: center;
+}
+
+.footer-number {
+	color: #FFF;
+	font-size: 5rem;
+	line-height: 4rem;
+	margin: .5rem 0 0;
+	text-align: center;
+}
+

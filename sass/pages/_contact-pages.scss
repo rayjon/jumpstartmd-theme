@@ -1,0 +1,17 @@
+.program-stats-list {
+    @include outer-container;
+    margin-top: rem(40);
+    dt {
+        @include span-columns(2);
+        clear: left;
+        margin-top: 0;
+        margin-bottom: rem(40); 
+    }
+    
+    dd {
+       @include span-columns(10);
+       @include omega();
+       margin-top: rem(3);
+    }
+}
+

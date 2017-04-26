@@ -1,0 +1,109 @@
+/***** =Header  ***************************************************************/
+body.admin-bar .site-header {
+      top: 32px;
+}
+
+
+.site-header {
+    background: white;
+    border-bottom: 1px solid #DDD;
+	margin: 0 auto 0;
+    overflow: auto;
+    padding: $small-spacing 0 $base-spacing;
+	text-align: center;
+	z-index: 999;
+	    
+    @include media($large-screen-up) {
+        box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+        overflow: initial;
+        position: fixed;
+	        top: 0;
+            left: 0;
+            right: 0;
+        padding-bottom: $small-spacing;
+        text-align: right;
+    }
+    
+    .site-logo {
+        display: block;
+        margin-top: $small-spacing;
+        @include span-columns(6);
+        @include shift(3);
+        
+        @include media($large-screen-up) {
+            @include span-columns(2.25);
+            margin: rem(4) 0 0;
+        }
+        
+        img {
+            max-width: 100%; 
+        }
+    }
+
+    .site-nav {
+        @include span-columns(12);
+        @include media($large-screen-up) {
+            @include span-columns(4.5);
+        }
+    }
+    
+    .number-portal {
+        @include span-columns(12);
+        @include media($large-screen-up) {
+            @include span-columns(5.25);
+        }
+    }
+
+    .contact-phone {
+        display: block;
+        font-weight: 400;
+        font-size: $h4;
+        margin: $base-spacing 0;    
+        text-align: center;
+                
+        @include media($large-screen-up) {
+            display: inline-block;
+            font-size: $h4;
+            margin: rem(10) $small-spacing 0 0; 
+        }
+    }
+    
+    .button-patient-portal {
+        margin-right: $small-spacing; 
+    }
+    
+    .button-get-info,
+    .button-patient-portal {
+        vertical-align: top;
+        margin-top: rem(4);
+    }
+    
+}
+
+.fl-builder .site-header {
+    display: none;
+}
+
+.bb-site-header {
+    .contact-phone {
+        margin-right: $small-spacing; 
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    .button-patient-portal {
+        margin-right: $small-spacing; 
+    }  
+}
+
+.bb-logo {
+    max-width: 200px;
+}
+
+.fl-menu-mobile-toggle {
+    float: right;
+}
+
+.fl-menu .menu {
+    margin-top: 10px;
+}

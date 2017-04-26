@@ -1,0 +1,196 @@
+fieldset {
+    margin: 0 0 $small-spacing;
+    display: block;
+    padding: 0;
+}
+
+input,
+label,
+select {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+label {
+  margin-bottom: $small-spacing;
+ 
+  &.required::after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+.fields {
+    margin-bottom: $base-spacing;
+}
+
+#{$all-text-inputs},
+select[multiple=multiple],
+textarea {
+  background-color: $base-background-color;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  box-shadow: $form-box-shadow;
+  box-sizing: border-box;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  margin-bottom: $base-spacing / 2;
+  padding: $base-spacing / 3;
+  transition: border-color;
+  width: 100%;
+
+  &:hover {
+    border-color: darken($base-border-color, 10%);
+  }
+
+  &:focus {
+    border-color: $action-color;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+}
+
+.site-main #{$all-text-inputs} {
+    @include media($large-screen-up) {
+    margin-bottom: 5px;
+    }
+ }
+ 
+ .site-main .get-started-form {
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="search"] {
+  @include appearance(none);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: $small-spacing / 2;
+}
+
+input[type="file"] {
+  padding-bottom: $small-spacing;
+  width: 100%;
+}
+
+select {
+  margin-bottom: 5px;
+  max-width: 100%;
+  width: auto;
+}
+
+
+.entry-content .gform_fields {
+    list-style: none;
+    padding: 0;
+}
+
+/* Gravity Forms */
+/* Here I'm hacking the gravity forms plugin to style to main popup */
+.landing-page-form .gform_wrapper  .top_label .gfield_label,
+.gform_wrapper .get-started-popup .top_label .gfield_label {
+        display: none;
+}
+
+form {
+    @include outer-container();
+}
+
+.name_first {
+    @include span-columns(6);
+    input {
+        margin-bottom: rem(2);
+    }
+    label {font-size: em(14);}
+}
+
+.name_last {
+    @include span-columns(6);
+    @include omega();
+
+    input {
+        margin-bottom: rem(2);
+    }
+    
+    label {font-size: em(14);}
+}
+
+#sidebar .fancy-form-title {
+	color: #8BAEA2;
+ 	font-family: 'Pacifico', cursive; 
+	font-size: 2em;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.gform_wrapper label.gfield_label + div.ginput_container {
+    overflow: auto;
+}
+
+.hidden-field {
+	display: none;
+}
+    
+.gf_left_half,
+.gf_right_half {
+    @include span-columns(6);
+
+    input {
+    margin-bottom: rem(2);
+    }
+}
+
+.gf_right_half {
+    @include omega();
+}
+
+.gform_footer {
+    clear: both;
+    overflow: auto;
+}
+
+.gfield_radio,
+.gfield_checkbox {
+    padding: 0 !important;
+    
+    label {
+        display: inline;
+    }
+        
+    li {
+        list-style-type: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body .get-started-popup_wrapper {
+    margin: 0 rem(30);
+}
+
+
+body .get-started-popup_wrapper .ginput_complex label,
+body .get-started-popup_wrapper .field_description_below .gfield_description {
+    color: $gray;
+    font-family: $base-font-family;
+    font-size: em(14);
+    font-style: normal;
+    letter-spacing: normal;
+    padding: 0;
+}
+
+.honey-bean {
+    display: none;
+}

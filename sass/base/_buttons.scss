@@ -1,0 +1,304 @@
+#{$all-button-inputs},
+button,
+.button,
+%button {
+  @include appearance(none);
+  -webkit-font-smoothing: antialiased;
+  background-color: $banana-yellow;
+  border-radius: $base-border-radius;
+  border: none;
+  color: $black-magic;
+  cursor: pointer;
+  display: inline-block;
+  font-size: rem(18);
+  line-height: 1;
+  padding: rem(15) rem(25);
+  //margin: 1.4rem auto;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  //white-space: nowrap;
+  text-align: center; 
+
+  &:visited {
+    color: $black-magic;
+  }
+
+  &:hover,
+  &:focus {
+    background: $supernova;
+    color: $black-magic; 
+    text-decoration: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+a.btn {
+    color: white;
+    display: inline-block;
+    padding: rem(10) rem(20) rem(8);
+    font-size: 1.4em;
+    border-radius: 2px;
+    margin: 1.4rem auto;
+    text-align: center;
+    text-shadow: none;
+    white-space: nowrap;
+    
+    &:hover,
+    &:focus {
+        background: #555;
+        color: white;
+        text-decoration: none;
+    }
+    
+    &:visited {
+        color: white;
+    }
+}
+
+%pale-taupe-background {
+    background: $pale-taupe;
+    color: $black-magic;
+    
+    &:visited {
+        color: $black-magic;
+    } 
+    
+    &:hover {
+        background-color: $mai-tai;
+        color: white;
+    }
+}
+
+%banana-yellow-background {
+  color: $black-magic;
+  background: $banana-yellow;
+  
+  &:visited {
+    color: $black-magic;
+  }
+  
+  &:hover {
+      background-color: $supernova;
+      color: $black-magic;
+  }
+}
+
+%saratoga-background {
+    background: $saratoga;
+    color: white;
+    
+    &:hover {
+        background-color: $bronzetone;
+        color: white;
+    }
+}
+
+%upsdell-red-background {
+    background: $upsdell-red;
+    color: white;
+    
+    &:hover {
+      background-color: $vivid-auburn;
+      color: white;
+  }
+}
+
+%orient-background {
+    background: $orient;
+    color: white;
+    
+    &:visited {
+        color: white;
+    } 
+    
+    &:hover {
+        background-color: $astronaut-blue;
+        color: white;
+    }
+}
+
+%daintree-background {
+    background: $daintree;
+    color: white;
+    
+    &:visited {
+        color: white;
+    }
+    
+    &:hover {
+        background-color: $black-magic;
+        color: white; 
+    }
+}
+
+%black-background {
+  color: #fff;
+  background: $black-magic;
+  
+      &:visited {
+          color: #fff;
+      }
+}
+
+%dark-green-background {
+    background: $saratoga;
+    color: white;
+    
+    &:visited {
+        color: white;
+    }
+    
+    &:hover {
+        background: $bronzetone;
+    }
+}
+
+%size-small {
+    padding: rem(10) rem(13) rem(10);
+}
+
+.button {
+  //header
+  &-get-info {
+    @extend %button;
+    @extend %banana-yellow-background;
+    @extend %size-small;
+    font-size: $base-font-size;
+  }
+  
+  &-patient-portal {
+    @extend %button;
+    @extend %orient-background;
+    @extend %size-small;
+    font-size: $base-font-size;
+  }
+  
+  &-partner-pathway {
+    @extend %button;
+    @extend %pale-taupe-background;
+    font-size: $h4;
+  }
+  
+  //content
+  &-get-started {
+      @extend %button;
+      @extend %banana-yellow-background;
+      font-size: rem(18);
+  }
+  
+  //blog
+  &-medicine {
+      @extend %button;
+      @extend %saratoga-background;
+      @extend %size-small;
+      
+
+      &:visited {
+        color: white;
+      }
+  }
+  
+  &-movement {
+      @extend %button;
+      @extend %orient-background;
+      @extend %size-small;
+  }
+  
+  &-meals {
+      @extend %button;
+      @extend %size-small;
+  }
+  
+  &-mindset {
+      @extend %button;
+      @extend %upsdell-red-background;
+      @extend %size-small;
+  }
+  
+  &-misc {
+      @extend %button;
+      @extend %daintree-background;
+      @extend %size-small;
+  }
+}
+
+@media only screen and (max-width:667px) {
+a.btn { 
+    display: block;
+    -webkit-appearance: none;
+}}
+
+article.post a.btn {
+    margin: 0 auto;
+}
+
+a.btn-small {
+    font-size: 1em;
+    padding: .5rem .8rem .4rem;
+}
+
+.btn-orange {
+    background: #E98300;
+}
+
+.btn-orange:hover {
+    background: #555;
+}
+
+.btn-sage {
+    background: #8ba69c;
+}
+
+.btn-sage:hover {
+    background: #75777B;
+}
+
+.btn-gray {
+    background: #8a8c8e;
+}
+
+.btn-gray:hover {
+    background: #75777B;
+}
+
+a.btn-gold {
+	background: #FFB612;
+}
+
+a.btn-celery {
+	background: #ABC785;	
+}
+
+a.btn-sage {
+	background: #8BAEA2;
+}
+
+a.button-gold:hover,
+a.button-celery:hover,
+a.button-sage:hover {
+	background: #555;
+	text-decoration: none;
+}
+
+a.button-orange:hover {
+	background: #e98300;
+}
+
+a.btn:visited {
+    color: white;
+}
+	
+.gform_footer .button:hover {
+	background: #75777B;
+    border-color: #75777B;	
+}
+	
+body .gform_wrapper .gform_footer {
+	border: none!important;
+	margin: 0;
+}

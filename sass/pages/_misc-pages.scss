@@ -1,0 +1,200 @@
+// Get Info Page
+.get-info-page-form {
+    @include media($medium-screen-up) {
+        @include span-columns(9);
+        @include shift(1.5);
+    }
+    
+    .call-us {
+        margin: $base-spacing 0;
+        
+        p {
+            font-size: $h4;
+            margin: 0;
+        }
+        
+        span {
+            font-size: $h1;
+        }
+    }
+}
+
+// Statistics
+.statistics-bullets {
+    li {
+        overflow: auto;
+        clear: both;
+        margin-bottom: $base-spacing * 2;
+    }
+    
+    img {
+        width: 85px;
+        float: left;
+        margin: 0 $small-spacing 0 0;
+    }   
+}
+
+// Contact Us
+.location-contact-info {
+    @include media($medium-screen-up) {
+        @include span-columns(5);
+    }
+}
+
+.corporate-contacts {
+    background: $light-gray;
+	padding: $base-spacing;
+	
+	@include media($medium-screen-up) {
+        @include span-columns(5);
+    } 
+}
+
+// Corporate Page
+.corporate-case-study {
+    background-color: $cherokee;
+    padding: $base-spacing;
+    margin-bottom: $base-spacing;
+    
+    h2 {
+        text-align: center;
+    }
+    
+    img {
+        float: left;
+        margin: 0;
+        padding: 0 $base-spacing $base-spacing 0;
+    }
+}
+
+
+.corporate-wellness-approach {
+    background: $yellow-metal;
+    color: #fff;
+    margin-bottom: $base-spacing * 2;
+    
+    td {
+        padding: $small-spacing;
+        border: 1px solid white;
+    }
+}
+
+// Doctor Portal
+.referral-info {
+    background: $cherokee;
+    padding: $base-spacing;
+    margin-bottom: $base-spacing * 2;
+    
+    @include media($large-screen-up) {
+        padding: $base-spacing $base-spacing * 6;
+    }
+    
+    h2 {
+        margin-top: $base-spacing; 
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: $base-font-size;
+        text-align: center;
+    }
+}
+
+.how-we-can-help {
+    h2 {
+        text-align: center;
+    }
+    
+    img {
+        clear: both;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .buttons {
+        margin: 0 0 $base-spacing * 2;
+        overflow: auto;
+    }
+    
+    .button {
+        @include span-columns(6);
+    }
+}
+
+.statistics-bullets {
+    ul {
+        list-style-type: none; 
+    }
+}
+
+// Compare Weight Loss Programs
+.compare-weight-loss-programs {
+    font-size: rem(14);
+    
+    th:nth-child(1),
+    td:nth-child(1) {
+        width: 28%;
+    }   
+    
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5),
+    th:nth-child(2),
+    th:nth-child(3),
+    th:nth-child(4),
+    th:nth-child(5) {
+        width: 18%;
+    }
+    
+    th:nth-child(1) {
+        background-color: $orient;
+        color: white;
+    }
+    
+    th:nth-child(2),
+    th:nth-child(3),
+    th:nth-child(4) {
+        background-color: $loblolly;
+    }
+    
+    th:nth-child(5) {
+        background-color: $daintree;
+        color: white; 
+    }
+    
+    td, th {
+        border: $orient 2px solid;
+        padding: $small-spacing;
+    }
+    
+    .fa-times-circle {
+        color: $vivid-auburn;
+    }
+    
+    .fa-check-circle {
+        color: $yellow-metal;
+    }
+}
+
+// Reviews and Testimonials
+.category-testimonials {
+    h2 {
+        font-size: $h3;
+    }   
+}
+
+.bhrt-testimonial {
+    margin-bottom: $base-spacing;
+}
+
+// Hormones Treated - /hormones-treated/
+.hormones-treated {
+    a:visited {
+        color: $orient;
+    }
+    
+    a:hover {
+        color: $daintree;
+    }
+}

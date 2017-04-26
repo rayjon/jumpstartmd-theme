@@ -1,0 +1,198 @@
+/* Forms */
+.sidebar .get-started-form {
+    margin-bottom: $base-spacing;
+    
+    .fields fieldset {
+        @include span-columns(6);
+        @include omega(2n);
+        padding: 0;
+    }
+        
+    label {
+        font-size: rem(14);
+    }
+}
+
+.sidebar h1, 
+.sidebar h2, 
+.sidebar h3, 
+.sidebar h4, 
+.sidebar h5, 
+.sidebar h6 {
+    margin: 0 0 $small-spacing;  
+}
+
+.sidebar h2 { 
+    font-size: $h3; 
+}
+
+.sidebar h3 {
+    font-size: $h4;
+}
+
+.sidebar {
+	/* border-radius: 10px; */
+	background: $light-gray;
+	float: right;
+	margin: 0;
+	padding: 20px 0;
+	display: inline;
+	width: 100%;
+	
+	@include media($large-screen-up) {
+    	width: 33%;
+	}
+	
+	a:visited {
+    	color: $orient;
+	}
+	
+	.button a:visited {
+    	color: inherit;
+	}
+}
+	
+.sidebar-alt {
+	width: 150px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+	
+.sidebar-content .sidebar, 
+.sidebar-sidebar-content .sidebar {
+	float: left;
+	}
+	
+.content-sidebar-sidebar .sidebar-alt {
+	float: right;
+}
+
+.sidebar .widget, 
+.sidebar-alt .widget {
+	margin: 0;
+	padding: 0 1.15rem rem(40);
+	overflow: auto;
+}
+
+
+.sidebar .landing-page, 
+.sidebar-alt .landing-page {
+	/* background: #fdf7db; */
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 15px;
+	margin-left: 0;
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+}
+
+.sidebar .more-link {
+	background: #FFB612;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+	padding: 8px 15px 8px 15px;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.sidebar .widget p, 
+.sidebar-alt .widget p {
+	margin: 0;
+	padding: 0;
+}
+	
+.sidebar .textwidget p, 
+.sidebar-alt .textwidget p {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+.sidebar img, 
+.sidebar a img, 
+.sidebar-alt img, 
+.sidebar-alt a img {
+	border: none;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar ul, 
+.sidebar ol, 
+.sidebar-alt ul,
+.sidebar-alt ol {
+	list-style-image: none;
+	list-style-position:outside;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar ul ul, 
+.sidebar ol ol, 
+.sidebar-alt ul ul, 
+.sidebar-alt ol ol {
+	list-style-image:url(images/bullet-gray.png);
+	list-style-position:outside;
+	margin: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 10;
+}
+
+.sidebar li, 
+.sidebar-alt li {
+	list-style-image: inherit;
+	list-style-position:inside;
+	list-style-type: none;
+	list-style: none;
+	word-wrap: break-word;
+	border-bottom-width: 0px;
+	border-bottom-style: dotted;
+	border-bottom-color: #ffffff;
+}
+
+.sidebar .gform_wrapper { margin: 0; }
+
+.sidebar-phone {
+    margin-bottom: $base-spacing;
+    background: $orient;
+    padding: 18px 5px 10px;
+    color: white;
+    
+    h4 {
+        //color: #CCC;
+        font-size: 22px; 
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .number {
+        display: block;
+        font-size: em(26);
+        margin-bottom: $small-spacing; 
+        text-align: center;
+    }
+    
+    p {
+        text-align: center;
+    }
+}
+
+.sidebar .mailchimp-subscribe-form {
+    input[type="submit"] {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}

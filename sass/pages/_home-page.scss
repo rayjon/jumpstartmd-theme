@@ -1,0 +1,381 @@
+.home-main {
+    background: url('images/woman-sailing-sunset.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 5rem 0;
+    text-align: center;
+    
+    @include media($large-screen-up) {
+        padding: 12rem 0;
+    }
+    
+    @include media($xl-screen-up) {
+        padding: 14rem 0;
+    }
+    
+    @include media($xxl-screen-up) {
+        padding: 17rem 0; 
+    }
+    
+    @include media($xxxl-screen-up) {
+        padding: 24rem 0; 
+    }
+    
+    .button-get-started {
+        margin: $base-spacing * 2 0 0; 
+    }
+    
+    h1, h2, h3 {
+        color: white;
+        text-shadow: 1px 2px 6px rgba(0,0,0,.5);
+        z-index: 0;
+    }
+    
+    h1 {
+        margin-bottom: .25em;  
+    }
+    
+    h2 {
+       margin-bottom: 0; 
+    }
+    
+    i {
+        color: $banana-yellow;
+    }
+}
+
+.mission {
+    padding: $base-spacing * 2 0;
+    text-align: center; 
+    
+    h1 {
+        font-size: $h3;
+    }
+}
+
+.jumpstart-difference {  
+    background: url('images/piedmont-lobby.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: $base-spacing * 2 0;
+    text-shadow: 1px 1px 30px #000;
+    text-align: center;
+    
+    @include media($medium-screen-up) {
+        padding: 5rem 0;
+    }
+        
+    .glass-bg {
+        background-color: rgba(0,0,0,0.5); 
+        overflow: auto;
+        border-radius: $base-border-radius;
+        padding: $base-spacing * 2 0;
+        @include media($medium-screen-up) {
+            @include span-columns(8);
+            padding: $base-spacing * 2;
+        }
+    }
+
+    ul {
+        @extend %default-ul;
+        font-size: $h4;
+        margin-bottom: $base-spacing * 2;
+        text-align: left;
+    }
+    
+    .number i {
+        color: $banana-yellow;
+    }
+}
+
+.the-results {
+    padding: $base-spacing * 2 0;
+    header {
+        text-align: center;
+        
+        h2 {
+            margin-bottom: $base-spacing;
+        }
+    }
+    
+    .results-graphic {
+        margin-bottom: $base-spacing;
+        @include media($medium-screen-up) {
+            @include span-columns(6);
+            margin-bottom: 0;
+        }
+    }
+    
+    .results-bullets {
+        @include media($medium-screen-up) {
+            @include span-columns(6);
+            @include omega;
+            @include clearfix;
+        }
+        
+        h3 {
+            margin-top: 0;
+        }
+        
+        ul {
+            @extend %default-ul;
+            font-size: $h4;
+        }
+    }
+    
+    footer {
+        clear: both;
+        padding-top: $base-spacing;
+        
+        ol {
+            @extend %default-ol;
+        }
+    }
+}
+
+.five-ms {
+    background: $raven;
+    color: white;
+    padding: $base-spacing * 2 0;
+    text-align: center;  
+    
+    @include media($large-screen-up) {
+        padding: $base-spacing * 4 0;
+    }
+    
+    p {
+        font-size: $h4;    
+    }
+    
+    .number i {
+       color: $cherokee;
+    }
+}
+
+.icon-ms {
+    @include clearfix;
+    margin-bottom: $base-spacing * 2;
+     
+    .icon-m {
+        padding: rem(8) 0 0;
+        //width: 50px;
+        margin-top: 60px;
+        
+        @include media($medium-screen-up) {
+            @include span-columns(4);
+            @include omega(3n);
+        }
+        
+        .icon {
+           border: 5px solid $cherokee;
+           border-radius: 50%;
+           display: inline-block;
+           margin-bottom: 1rem;
+           width: 5rem;
+           height: 5rem;
+           
+           &:hover {
+               border-color: white;
+           }
+        }
+        
+        img {
+            margin-top: rem(10);
+        }
+    }
+    
+    h3 a {
+        color: $cherokee;
+        
+        &:hover {
+            color: white;
+        }
+    }
+     
+    .icon-m:nth-child(4) {
+        @include media($medium-screen-up) {
+            @include shift(2);
+        }
+    }
+}
+
+.mobile-desk {
+    background: url('images/jsmd-mobile-desk.jpg') no-repeat top center;
+    background-size: cover;
+    padding-top: 15rem;
+    color: white;
+    
+    h2, h3 {
+        text-shadow: 1px 1px 10px rgba(0,0,0,.4);
+        
+        a {
+            color: white;
+        }
+    }
+    
+    i {
+        color: $banana-yellow;
+    }
+    
+    @include media($large-screen-up) {
+        background-position: 100% 0; 
+        padding: 22rem 0 2rem;
+    }
+    
+    @include media($xl-screen-up) {
+        padding-top: 28rem;   
+    }
+    
+    @include media($xxl-screen-up) {
+        padding-top: 32rem;
+    }
+    
+    @include media($xxxl-screen-up) {
+        padding-top: 42rem;
+    }
+    
+    }
+
+.testimonials {
+    blockquote {
+        font-size: $h4;
+        
+        &:before,
+        &:after {
+            color: $orient;
+        }
+    }
+    
+    .flex-control-paging li a.flex-active { 
+        background: $orient; 
+    }
+    
+    .flex-control-paging li a {
+        border: 4px solid $orient;
+    }
+    
+    .number i {
+        color: $orient;
+    }
+}
+
+.meet-our-team {
+    padding: $base-spacing * 2 0;
+    text-align: center;
+    
+    @include media($large-screen-up) {
+        padding: $base-spacing * 2;
+    }
+    
+    header {
+        margin-bottom: $base-spacing;
+        overflow: auto;
+    }
+    
+    .team-mates {
+        .team-mate {
+            @include media($small-screen){ 
+                @include span-columns(6);
+                @include omega(2n);
+            }
+            
+            @include media($medium-screen-up) {
+                @include span-columns(2.4);
+                @include omega(5n);
+            }
+            
+            img {
+                border: 1px solid $black-magic;
+                margin-bottom: $small-spacing;
+                width: rem(160);
+                height: rem(160);
+            }
+            
+            h3 {
+                font-size: $h4;
+                margin-bottom: $small-spacing; 
+            }
+        }
+    }
+}
+
+.partner-pathway {
+    background: $daintree;
+    color: white;
+    padding: $base-spacing * 2 0 $base-spacing * 3;
+    text-align: center;
+    
+    h2 {
+        margin-bottom: $base-spacing;
+    }
+    
+    .pathways {
+        .pathway {
+            margin-bottom: $base-spacing;
+            @include media($medium-screen-up) {
+                @include span-columns(6);
+                margin: 0;
+            }
+        }
+    } 
+}
+
+
+
+.flex-testimonials .flex-control-nav {
+    bottom: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width:667px) {
+.flex-testimonials .flex-control-paging li a {
+    width: 10px;
+    height: 10px;  
+}}
+
+
+/* Get Started Popup */
+.get-started-popup {
+    h2 {
+        font-size: $h1;
+        margin: 0 0 $small-spacing;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: $h1;
+        margin-bottom: $small-spacing;
+        text-align: center;
+    }
+
+    p {
+        display: block;
+        font-size: $h4;
+        margin: 0 auto $small-spacing;
+        text-align: center;
+    }
+}
+
+
+.get-started-popup .get-started-form {
+    @include span-columns(10);
+    @include shift(1);
+    margin-bottom: auto;
+    
+    .fields fieldset {
+        @include span-columns(6);
+        @include omega(2n);
+        padding: 0;
+    }
+    
+    label {
+        font-size: em(14);
+    }
+    
+    .button-wrap {
+        text-align: center;
+    }
+}
+
+.fancybox-inner {
+    overflow-y: hidden;
+}
